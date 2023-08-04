@@ -1,0 +1,5 @@
+name: c4m4
+type: module
+description: 'Create a hook that runs whenever new content is published and send an email to the sites email address.'
+package: Custom
+core_version_requirement: ^10

@@ -1,0 +1,8 @@
+{
+  "name": "drupal/c4m4",
+  "type": "drupal-module",
+  "description": "Create a hook that runs whenever new content is published and send an email to the sites email address.",
+  "require": {
+      "drupal/core": ">=10"
+  }
+}

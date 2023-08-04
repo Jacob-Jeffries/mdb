@@ -1,4 +1,4 @@
 can promote nodes: 
   title: 'Can promote nodes'
   description: 'Determines if the user can change promotion fields on content.'
-  
+  restrict access: true # This add a security warning to the view

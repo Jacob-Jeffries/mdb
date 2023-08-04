@@ -1,0 +1,5 @@
+name: cbm2
+type: module
+description: Cookbook Chapter 4 Module 2
+core_version_requirement: ^10
+package: Custom

@@ -1,0 +1,5 @@
+name: c4m5
+type: module
+description: This module subscribes to a RequestEvent event.
+core_version_requirement: '>=9'
+package: Custom

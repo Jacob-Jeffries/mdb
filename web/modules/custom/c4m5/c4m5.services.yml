@@ -1,0 +1,5 @@
+services:
+  c4m5.request_subscriber:
+    class: Drupal\c4m5\EventSubscriber\RequestSubscriber
+    tags:
+      - { name: event_subscriber }

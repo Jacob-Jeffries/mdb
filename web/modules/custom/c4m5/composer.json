@@ -1,0 +1,8 @@
+{
+  "name": "drupal/c4m5",
+  "type": "drupal-module",
+  "description": "This module subscribes to a RequestEvent event.",
+  "require": {
+      "drupal/core": ">=10"
+  }
+}

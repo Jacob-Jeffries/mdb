@@ -1,5 +1,5 @@
 {
-  "name": "drupal/cb_m1",
+  "name": "drupal/cbm1",
   "type": "drupal-module",
   "description": "This is an example module from the Drupal Development Cookbook!",
   "require": {

@@ -1,0 +1,18 @@
+<?php
+
+  /**
+   * Implements hook_page_top()
+  */
+
+  function cbm1_page_top()
+  {
+    \Drupal::messenger()->addStatus('Hello World');
+    
+    // This render array truly puts things at the top of the page
+    // while the messenger() service add it to the mid-page alert area. 
+    // $page_top['cbm1'] = [
+    //   '#markup' => 'Hello World! - Page Top',
+    // ];
+  }
+
+?>

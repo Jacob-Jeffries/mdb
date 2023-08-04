@@ -6,7 +6,9 @@
 
   function cbm1_page_top()
   {
-    \Drupal::messenger()->addStatus('Hello World');
+    $site_mail = \Drupal::config('system.site')->get('mail');
+
+    \Drupal::messenger()->addStatus('Hello World '.$site_mail);
     
     // This render array truly puts things at the top of the page
     // while the messenger() service add it to the mid-page alert area. 

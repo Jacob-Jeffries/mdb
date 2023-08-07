@@ -96,5 +96,8 @@
                 "      composer remove drupal/core-project-message"
             ]
         }
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^1.10"
     }
 }

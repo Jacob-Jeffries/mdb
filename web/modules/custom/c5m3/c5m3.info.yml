@@ -1,0 +1,5 @@
+name: c5m3
+type: module
+description: This is an example module from the Drupal Development Cookbook!
+core_version_requirement: ^10
+package: Custom

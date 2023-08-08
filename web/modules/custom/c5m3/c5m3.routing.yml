@@ -1,0 +1,6 @@
+c5m3.user_redirect:
+  path: /user-redirect
+  defaults:
+    _controller: Drupal\c5m3\Controller\RedirectController::page
+  requirements:
+    _access: 'TRUE'

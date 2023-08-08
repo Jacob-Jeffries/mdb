@@ -1,0 +1,5 @@
+services:
+  c5m1.route_subscriber:
+    class: Drupal\c5m1\Routing\RouteSubscriber
+    tags:
+      - { name: event_subscriber }

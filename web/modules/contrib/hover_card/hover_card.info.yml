@@ -1,0 +1,10 @@
+name: 'Hover Card'
+description: 'Provides user data while hovering the authenticated users.'
+type: module
+core_version_requirement: ^8.8 || ^9 || ^10
+configure: hover_card.settings
+
+# Information added by Drupal.org packaging script on 2022-06-27
+version: '8.x-1.6'
+project: 'hover_card'
+datestamp: 1656339370

@@ -1,0 +1,28 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display the Hover Card.
+ *
+ * Available variables:
+ * - details: The details of the currently requested user which includes:
+ *   - name: The users' display name.
+ *   - mail: The email address of the user.
+ *   - picture: The display pic of the user if set.
+ *   - roles: The user roles.
+ *
+ * @see \Drupal\hover_card\Controller\HoverCardController::build()
+ *
+ * @ingroup themeable
+ */
+#}
+<div class="user-details">
+  {% set user_picture = details.picture %}
+  {% if user_picture is not empty %}
+    <div class="user-image">{{ user_picture }}</div>
+  {% endif %}
+  <div class="user-name"><strong>{{ 'Name'|t }}:</strong> {{ details.name }}</div>
+  {% if details.mail is not empty %}
+    <div class="user-mail"><strong>{{ 'Email'|t }}:</strong> <a href="mailto:{{ details.mail }}">{{ details.mail }}</a></div>
+  {% endif %}
+  <div class="user-role"><strong>{{ 'Roles'|t }}:</strong> {{ details.roles }}</div>
+</div>

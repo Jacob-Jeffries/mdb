@@ -1,0 +1,6 @@
+hover_card.settings:
+  type: mapping
+  label: Settings
+  mapping:
+    display_email:
+      type: boolean

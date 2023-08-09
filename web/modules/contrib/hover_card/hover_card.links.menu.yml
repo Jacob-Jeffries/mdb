@@ -1,0 +1,6 @@
+hover_card.settings:
+  title: 'Hover Card Settings'
+  description: 'Provides an option to toggle displaying the users email address at Hover Card.'
+  parent: system.admin_config_ui
+  route_name: hover_card.settings
+  weight: 10

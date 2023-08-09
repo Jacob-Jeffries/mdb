@@ -1,0 +1,45 @@
+<?php
+
+/**
+ * @file
+ * Provides Hover Card for all user links with "username" as their class.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function hover_card_help($route_name, RouteMatchInterface $route_match) {
+  global $base_url;
+  $output = '';
+  switch ($route_name) {
+    case 'help.page.hover_card':
+      $output .= '<p>' . t('Hovercard is a module which is based on <a href="@hovercard">hovercard</a> which is a free light weight jQuery plugin that enables you to display related information with the hovered label, link, or any html element of your choice. This module extends Drupal to provide Hovercard for the users of the website.', ['@hovercard' => 'https://github.com/prashantchaudhary/hovercard/']) . '</p>';
+      $output .= '<h6>' . t('Configuration') . '</h6>';
+      $output .= '<ul>';
+      $output .= '<li>' . t('This module has menu or modifiable settings. There is configuration link for this which you can access at <a href="@hover_card">Hover Card Settings</a>. When enabled and configured properly, this module will display the hover card to the user links with <code>username</code> as class to their anchor tags. To disable the hover card from user links, uninstall the module and clear caches.', ['@hover_card' => $base_url . '/admin/config/people/hover-card']) . '</li>';
+      $output .= '</ul>';
+  }
+  return $output;
+}
+
+/**
+ * Implements hook_page_attachments().
+ */
+function hover_card_page_attachments(array &$page) {
+  $page['#attached']['library'][] = 'hover_card/hover_card';
+  $page['#attached']['drupalSettings']['path']['hoverCard'] = \Drupal::service('extension.list.module')->getPath('hover_card');
+}
+
+/**
+ * Implements hook_theme().
+ */
+function hover_card_theme() {
+  return [
+    'hover_card' => [
+      'variables' => ['details' => NULL],
+      'template' => 'hover_card',
+    ],
+  ];
+}

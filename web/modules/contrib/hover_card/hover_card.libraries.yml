@@ -1,0 +1,15 @@
+hover_card:
+  remote: https://github.com/prashantchaudhary/hovercard
+  version: VERSION
+  license:
+    name: MIT
+    gpl-compatible: false
+  js:
+    https://cdn.jsdelivr.net/gh/prashantchaudhary/hovercard/jquery.hovercard.min.js: {type: external, minified: true}
+    js/hover-card.js: {}
+  css:
+    theme:
+      css/hover-card.css: {}
+  dependencies:
+    - core/jquery
+    - core/drupal

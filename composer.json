@@ -24,6 +24,8 @@
         "drupal/devel": "^5.1",
         "drupal/field_group": "^3.4",
         "drupal/hover_card": "^1.6",
+        "drupal/simple_sitemap": "^4.1",
+        "drupal/sitemap": "^2.0@beta",
         "drupal/video_embed_field": "^2.5",
         "drush/drush": "^12.1"
     },
